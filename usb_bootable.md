@@ -25,7 +25,7 @@ mkfs.vfat /dev/sdb -I
 
 ## Optional: Validate the iso MD5 checksum
 
-Assuming you also downloaded a txt file with the checksums, run:
+Assuming you also downloaded a txt file (`MD5SUMS`) with the checksums, run:
 ~~~
 
 $ md5sum -c MD5SUMS 2> /dev/null  | grep OK
@@ -43,7 +43,8 @@ Simple usage:
 
 ~~~
 
-sudo dd if=/dev/sdb dd of=debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso bs=4096 status=progress
+sudo dd if=/dev/sdb of=debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso bs=4096 \
+    status=progress
 
 ~~~
 
