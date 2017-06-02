@@ -28,9 +28,8 @@ mkfs.vfat /dev/sdb -I
 Assuming you also downloaded a txt file with the checksums, run:
 ~~~
 
-$ md5sum -c MD5SUMS 2> /dev/null  | grep OK                                                              │  2 ## Identify the code sd\* assigned to the pen drive
-                                                                                                         │  3 ~~~
-debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso: OK                                                    │  4 sudo fdisk -l
+$ md5sum -c MD5SUMS 2> /dev/null  | grep OK
+debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso: OK
 debian-live-8.8.0-amd64-standard+nonfree.iso: OK  
 
 
