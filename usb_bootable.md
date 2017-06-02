@@ -41,7 +41,7 @@ Simple usage:
 
 ~~~
 
-sudo dd if=/dev/sdb of=debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso bs=4096 \
+sudo dd if=debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso of=/dev/sdb bs=4096 \
     status=progress
 
 ~~~
