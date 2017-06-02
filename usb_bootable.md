@@ -1,11 +1,9 @@
 # How to "burn" a iso in a USB stick
 
-## Identify the code sd\* assigned to the stick
+## Identify the sd\* code assigned to the stick
 ~~~
 sudo fdisk -l
-
 # or 
-
 lsblk
 ~~~ 
 
@@ -37,7 +35,7 @@ debian-live-8.8.0-amd64-standard+nonfree.iso: OK
 
 In our example we will use the debian-gnome iso.
 
-# Generate the bootable stick with DD
+## Generate the bootable stick with DD
 
 Simple usage:
 
@@ -48,6 +46,10 @@ sudo dd if=/dev/sdb of=debian-live-8.8.0-amd64-gnome-desktop+nonfree.iso bs=4096
 
 ~~~
 
-The status parameter is optional and is only available in `GNU coreutils` 8.24+ ([source](https://askubuntu.com/a/215590))
+The status parameter is optional and is only available in `GNU coreutils` 8.24+.
 
 
+## Sources
+
+- [How to create bootable USB drive using dd command](https://www.ostechnix.com/how-to-create-bootable-usb-drive-using-dd-command/)
+- [AskUbuntu: How to check dd progress](https://askubuntu.com/a/215590)
