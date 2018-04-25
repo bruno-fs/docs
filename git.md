@@ -37,6 +37,13 @@ git submodule update --init --recursive
 # checkout all submodules to latest commit on master
 git submodule foreach --recursive checkout master
 ```
+
+## Split one big commit
+
+https://stackoverflow.com/a/6217314
+
+
+
 sources: 
 - [SO](https://stackoverflow.com/questions/6474847/how-do-i-git-clone-recursive-and-checkout-master-on-all-submodules-in-a-single)
 - [this gist](https://gist.github.com/gitaarik/8735255)
